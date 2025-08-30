@@ -1,47 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css\style.css">
-  </head>
-  <body>
-    <p 
-    style="background-color: navajowhite;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: brown;
-    text-align: justify;
-    font-size: 30px;
-    border: 2px solid #4293ad;
-    
-   
-    ">
-    
-      <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officia
-      totam laudantium et voluptatum non, quae itaque quaerat ipsam inventore
-      obcaecati quisquam rerum. Nulla rerum ea quam! Porro, veritatis voluptas.</q>
-      <p><abbr title="Institute of information technology">IIT</abbr></p>
-      <bdo dir="rtl">This text will be written from right to left</bdo>
-    </p>
-    <a href="mailto:someone@example.com">Send mail</a>
-    <p><a href="#C1">Jump to Chapter 4</a></p>
-<p><a href="#C10">Jump to Chapter 10</a></p>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Web Page</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Page</h1>
+  </header>
+  <main>
+    <section class="intro">
+      <p>
+        <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime,
+        officia totam laudantium et voluptatum non, quae itaque quaerat ipsam
+        inventore obcaecati quisquam rerum. Nulla rerum ea quam! Porro,
+        veritatis voluptas.</q>
+      </p>
+      <p>
+        <abbr title="Institute of Information Technology">IIT</abbr>
+      </p>
+      <p>
+        <bdo dir="rtl">This text will be written from right to left</bdo>
+      </p>
+      <p><a href="mailto:someone@example.com">Send Email</a></p>
+      <p><a href="#c1">Jump to Chapter 1</a> | <a href="#c10">Jump to Chapter 10</a></p>
+    </section>
 
-<h2 id="c1">Chapter 1</h2>
-<p>This chapter explains ba bla bla</p>
-<h2 id="c10">Chapter 10</h2>
-<p>This chapter explains ba bla bla</p>
-<img src="Image/emon.jpg" alt=""usemap="scene" width="350">
-<map name="scene"></map>
-<area shape="rect" coords="34,44,270,350" href="screen.html" alt="">
-<picture>
-    <source srcset="coffe.jpg">
-    <source srcset="emon.jpg">
-    <img src="img_beatles.gif" alt="Beatles" style="width:auto;">
-</picture>
+    <section class="chapters">
+      <h2 id="c1">Chapter 1</h2>
+      <p>This chapter explains ba bla bla</p>
 
+      <h2 id="c10">Chapter 10</h2>
+      <p>This chapter explains ba bla bla</p>
+    </section>
 
-  </body>
+    <section class="image-map">
+      <h3>Interactive Image</h3>
+      <img src="Image/emon.jpg" alt="Scene image" usemap="#scene" width="350" />
+      <map name="scene">
+        <area shape="rect" coords="34,44,270,350" href="screen.html" alt="Screen" />
+      </map>
+    </section>
+
+    <section class="picture-demo">
+      <h3>Responsive Picture</h3>
+      <picture>
+        <source srcset="coffe.jpg" media="(min-width: 800px)">
+        <source srcset="emon.jpg" media="(min-width: 500px)">
+      </picture>
+      <img src="Image/img_beatles.gif.jpeg" alt="Beatles">
+
+    </section>
+  </main>
+
+  <footer>
+    <p>My Web Page</p>
+  </footer>
+</body>
 </html>

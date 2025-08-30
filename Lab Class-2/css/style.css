@@ -1,37 +1,67 @@
-body{
-    background-color: aquamarine;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: justify;
-    a:link {
-        color: green;
-        background-color: transparent;
-        text-decoration: none;
-      }
-      
-      a:visited {
-        color: pink;
-        background-color: transparent;
-        text-decoration: none;
-      }
-      
-      a:hover {
-        color: red;
-        background-color: transparent;
-        text-decoration: underline;
-      }
-      
-      a:active {
-        color: yellow;
-        background-color: transparent;
-        text-decoration: underline;
-      }
-      img{
-        position: absolute;
-        top: 40%;
-        left:30%;
-        float: center;
 
-      }
-      
-     
+body {
+  background-color: #e0f7f5;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #333;
+  text-align: justify;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #4293ad;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 4px solid #2a6575;
+}
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+a:link {
+  color: green;
+  text-decoration: none;
+}
+a:visited {
+  color: purple;
+}
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+}
+
+section {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* centers the image */
+}
+
+
+.image-map img,
+.picture-demo img {
+  display: block;
+  margin: 0 auto;
+  border: 3px solid #4293ad;
+  border-radius: 10px;
+}
+
+footer {
+  background: #4293ad;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
 }
